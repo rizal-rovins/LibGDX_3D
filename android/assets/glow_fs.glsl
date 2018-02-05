@@ -6,5 +6,5 @@ varying vec2 v_texCoord0;
 varying float v_time;
 void main() {
 
-    gl_FragColor =vec4(cos(v_time),sin(v_time),1,1);
+    gl_FragColor =vec4(cos(v_time),sin(v_time),sin(v_time)*sin(3.14-v_time),1);
 }

@@ -11,7 +11,8 @@ public class AndroidLauncher extends AndroidApplication {
 	protected void onCreate (Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
-		config.numSamples=5;
+		config.numSamples=2;
+		config.useGyroscope=true;
 		initialize(new MyGdxGame(), config);
 	}
 }
